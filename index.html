@@ -2,6 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -10,7 +11,7 @@
  body{
   margin: 0;
   padding: 0;
-  background: url(https://scontent.fmnl30-1.fna.fbcdn.net/v/t1.6435-9/70143460_758195121278226_8322227807266537472_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=e3f864&_nc_eui2=AeHGsvJVVMxA9qynPy8iWKhasmn0G6NZdZCyafQbo1l1kCkSs96imeVjUd8K_X1nVtQKhfu2YbP3oe0oBc_BQRLj&_nc_ohc=b4ulfp28N7MAX8NLJLX&tn=UI3k02Is8pSJQZr9&_nc_ht=scontent.fmnl30-1.fna&oh=00_AT-vbBQNUVLqIJKcvwhx8TKyv-G5bqz1_BbUeQ3VrbSrDw&oe=621D5D34);
+  background: url(https://i.pinimg.com/originals/28/98/d8/2898d8c3c6cd6ba1db556f285c88f132.jpg);
   background-size: 50%;
 
 }
@@ -86,25 +87,182 @@ a:hover {
 }
 p {
 text-align: center;}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
 </style>
   </head>
 
   <body>
 <div class="box">
-  <img src="https://scontent.fmnl30-2.fna.fbcdn.net/v/t1.6435-9/186530674_1200335393730861_606875965842094921_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeH84FLdK20JQcLCUSBNyJMUzrP7VH-pQ1XOs_tUf6lDVXfigoqsIaxNfM_CAvqSXWX8m7AADYta14b20GnQxww9&_nc_ohc=wQdOVhD8dIMAX8bkXd4&_nc_ht=scontent.fmnl30-2.fna&oh=00_AT9GtySgf_0FJX5kVd8BcKfB42hwP-mGLeWoGF92zfMOiA&oe=621C3CB3" alt="" class="box-img">
-  <h1>Kristopper Consigo</h1>
-  <h>(BSCS D2021)</h>
-<h5>
-Kristopper Zimon Carl T. Consigo</h5>
-<p><center>Gamer, Programmer, Basketball Player</p></center>
-<a href="Page1.html" class="next round">&#8250;</a>
+  <img src="https://www.pinclipart.com/picdir/middle/41-413944_hero-clipart-hero-philippine-national-library-of-the.png" alt="" class="box-img">
+ <br>
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://icon-library.com/images/guest-icon-png/guest-icon-png-6.jpg" alt="Avatar"  width="2%" height="2%" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">
+<a href="C:\Users\Tony\Desktop\tupe\aguinaldo.html">Login</a></button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('page1.html');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
 </div>
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
     <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="Page11.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-home"></i> Home</a>
     <a href="Page11.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-user"></i> About</a>
+    <a href="Page11.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-address-card-o"></i> Contacts</a>
+    <a href="Page11.html" class="w3-bar-item w3-button w3-padding-large"><i class="fa fa-send-o"></i> Submit</a>
 	<div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">Content <i class="fa fa-caret-down"></i></button>     
+      <button class="w3-padding-large w3-button" title="More">History <i class="fa fa-caret-down"></i></button>     
       <div class="w3-dropdown-content w3-bar-block w3-card-4">
         <a href="Page1.html" class="w3-bar-item w3-button">Rizal</a>
         <a href="Page2.html" class="w3-bar-item w3-button">Aguinaldo</a>
@@ -122,4 +280,3 @@ Kristopper Zimon Carl T. Consigo</h5>
 </div>
 </body>
 </html>
-
