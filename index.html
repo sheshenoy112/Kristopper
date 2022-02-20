@@ -3,10 +3,13 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src ="login2.js"> </script>
+
     <title>Kristopper Consigo</title>
+
     <style>
  body{
   margin: 0;
@@ -206,45 +209,53 @@ span.psw {
   }
 }
 </style>
-  </head>
+</head>
 
-  <body>
+<body>
 <div class="box">
   <img src="https://www.pinclipart.com/picdir/middle/41-413944_hero-clipart-hero-philippine-national-library-of-the.png" alt="" class="box-img">
  <br>
 
   <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
 <div id="id01" class="modal">
-  
-  <form class="modal-content animate" action="/action_page.php" method="post">
+
+  <form class="modal-content animate" action="page12.html" method="post">
+
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-      <img src="https://icon-library.com/images/guest-icon-png/guest-icon-png-6.jpg" alt="Avatar"  width="2%" height="2%" class="avatar">
+
+      <img src="https://icon-library.com/images/guest-icon-png/guest-icon-png-6.jpg" alt="Avatar"  size="5%" class="avatar">
     </div>
 
     <div class="container">
       <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+      <input type="text" placeholder="Enter Username" id="username" required>
 
       <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-        
-      <button type="submit"><a href="page12.html">Login</a></button>
+      <input type="password" placeholder="Enter Password" id="password" required>
+
+      <input type="submit" name="" value="login" onclick="validate()">
+
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
+
     </div>
 
     <div class="container" style="background-color:#f1f1f1">
+
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+
       <span class="psw">Forgot <a href="#">password?</a></span>
+
     </div>
   </form>
 </div>
 
 <script>
 // Get the modal
-var modal = document.getElementById('page1.html');
+var modal = document.getElementById('id01');
 
 window.onclick = function(event) {
     if (event.target == modal) {
@@ -252,7 +263,23 @@ window.onclick = function(event) {
     }
 }
 </script>
-</div>
+<script>
+  function validate{}
+{
+  var username=document.getElementById("username").value;
+  var password=document.getElementById("password").value;
+  if(username=="Admin"&& password=="administrator")
+{
+  alert("login successfully");
+  return false;
+}
+else
+{
+  alert("login failed");
+}
 
+}
+</script>
+</div>
 </body>
 </html>
